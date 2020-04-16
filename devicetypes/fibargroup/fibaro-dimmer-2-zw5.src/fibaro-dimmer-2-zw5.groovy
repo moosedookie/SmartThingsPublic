@@ -17,9 +17,9 @@ metadata {
 		attribute "errorMode", "string"
 		attribute "scene", "string"
 
-		fingerprint mfr: "010F", prod: "0102", model: "2000"
-		fingerprint mfr: "010F", prod: "0102", model: "1000"
-		fingerprint mfr: "010F", prod: "0102", model: "3000"
+		fingerprint mfr: "010F", prod: "0102", model: "2000", deviceJoinName: "Fibaro Dimmer Switch"
+		fingerprint mfr: "010F", prod: "0102", model: "1000", deviceJoinName: "Fibaro Dimmer Switch"
+		fingerprint mfr: "010F", prod: "0102", model: "3000", deviceJoinName: "Fibaro Dimmer Switch"
 	}
 
 	tiles (scale: 2) {
@@ -67,15 +67,6 @@ metadata {
 	}
 
 	preferences {
-		input (
-				title: "Fibaro Dimmer 2 ZW5 manual",
-				description: "Tap to view the manual.",
-				image: "http://manuals.fibaro.com/wp-content/uploads/2017/02/d2_icon.png",
-				url: "http://manuals.fibaro.com/content/manuals/en/FGD-212/FGD-212-EN-T-v1.3.pdf",
-				type: "href",
-				element: "href"
-		)
-
 		parameterMap().each {
 			input (
 					title: "${it.num}. ${it.title}",
@@ -427,7 +418,7 @@ private encap(Map encapMap) {
 private encap(physicalgraph.zwave.Command cmd) {
 	if (zwaveInfo.zw.contains("s")) {
 		secEncap(cmd)
-	} else if (zwaveInfo.cc.contains("56")){
+	} else if (zwaveInfo?.cc?.contains("56")){
 		crcEncap(cmd)
 	} else {
 		logging("${device.displayName} - no encapsulation supported for command: $cmd","info")

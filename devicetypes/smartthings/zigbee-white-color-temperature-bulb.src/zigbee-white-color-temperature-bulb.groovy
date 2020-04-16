@@ -34,6 +34,9 @@ metadata {
 		// Generic
 		fingerprint profileId: "0104", deviceId: "010C", inClusters: "0006, 0008, 0300", deviceJoinName: "Generic Color Temperature Light"
 
+		// ABL
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300", outClusters: "0019", manufacturer: "Samsung Electronics", model: "ABL-LIGHT-Z-001", deviceJoinName: "Ultra Thin Wafer", mnmn: "Samsung Electronics", vid: "ABL-LIGHT-Z-001"
+
 		// AduroSmart
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 1000", outClusters: "0019", deviceId: "010C", manufacturer: "AduroSmart Eria", model: "AD-ColorTemperature3001", deviceJoinName: "Eria ZigBee Color Temperature Bulb"
 
@@ -46,11 +49,22 @@ metadata {
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 1000, FFFF", outClusters: "0019", manufacturer: "Aurora", model: "TWCLBulb50AU", deviceJoinName: "AOne Smart Tuneable Candle Lamp", mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-5000K"
 
 		// Commercial Electric
-		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300", outClusters: "0019", manufacturer: "ETI", model: "Zigbee CCT Downlight", deviceJoinName: "Commercial Electric Can Tunable White"
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300", outClusters: "0019", manufacturer: "ETI", model: "Zigbee CCT Downlight", deviceJoinName: "Commercial Electric Can Tunable White", vid: "generic-color-temperature-bulb-2700K-5000K"
 
 		// Ecosmart
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 0B05, 1000, FC82", outClusters: "000A, 0019", manufacturer: "The Home Depot", model: "Ecosmart-ZBT-BR30-CCT-Bulb", deviceJoinName: "Ecosmart Bulb"
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 0B05, 1000, FC82", outClusters: "000A, 0019", manufacturer: "The Home Depot", model: "Ecosmart-ZBT-A19-CCT-Bulb", deviceJoinName: "Ecosmart Bulb"
+
+		// Ikea
+		fingerprint manufacturer: "IKEA of Sweden", model: "GUNNARP panel round", deviceJoinName: "IKEA GUNNARP Lamp" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 08 0000 0003 0004 0005 0006 0008 0300 1000 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "LEPTITER Recessed spot light", deviceJoinName: "IKEA LEPTITER Spotlight" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 08 0000 0003 0004 0005 0006 0008 0300 1000 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E12 WS opal 600lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 09 0000 0003 0004 0005 0006 0008 0300 1000 FC7C 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E14 WS 470lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 08 0000 0003 0004 0005 0006 0008 0300 1000 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E14 WS opal 600lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 09 0000 0003 0004 0005 0006 0008 0300 1000 FC7C 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E26 WS clear 806lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb", mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" // raw desc: 01 0104 010C 01 08 0000 0003 0004 0005 0006 0008 0300 1000 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E27 WS clear 806lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb", mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" // raw desc: 01 0104 010C 01 08 0000 0003 0004 0005 0006 0008 0300 1000 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E26 WS opal 1000lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 09 0000 0003 0004 0005 0006 0008 0300 1000 FC7C 04 0005 0019 0020 1000
+		fingerprint manufacturer: "IKEA of Sweden", model: "TRADFRI bulb E27 WS opal 1000lm", deviceJoinName: "IKEA TRÅDFRI LED Bulb" , mnmn: "SmartThings", vid: "generic-color-temperature-bulb-2200K-4000K" //01 0104 010C 01 09 0000 0003 0004 0005 0006 0008 0300 1000 FC7C 04 0005 0019 0020 1000
 
 		// INGENIUM
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 1000", outClusters: "0019", manufacturer: "Megaman", model: "Z3-ColorTemperature", deviceJoinName: "INGENIUM ZB Color Temperature Light"
@@ -75,6 +89,7 @@ metadata {
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, FC0F", outClusters: "0019", manufacturer: "OSRAM", model: "LIGHTIFY Under Cabinet TW", deviceJoinName: "SYLVANIA Smart Under Cabinet TW"
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 0B05, FC01", outClusters: "0019", manufacturer: "LEDVANCE", model: "BR30 TW", deviceJoinName: "SYLVANIA Smart+ Adustable White BR30"
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 0B05, FC01", outClusters: "0019", manufacturer: "LEDVANCE", model: "RT TW", deviceJoinName: "SYLVANIA Smart+ Adustable White RT5/6"
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, FC0F", outClusters: "0019", manufacturer: "OSRAM", model: "LIGHTIFY Edge-lit flushmount", deviceJoinName: "SYLVANIA SMART+ Flush Mount"
 
 		// Leedarson
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0008, 0300, 0B05, 1000, FEDC", outClusters: "000A, 0019", manufacturer: "Smarthome", model: "S111-202A", deviceJoinName: "Leedarson Tunable White Bulb A19"
